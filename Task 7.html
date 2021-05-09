@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/13f8fb2909.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"><style> -->
+        <title>
+            Task 6
+        </title>
+        <style>
+            body{
+                background-image: url("Donut.png");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                color: white;
+            }
+            .header{
+                font-family: "Audiowide",sans-serif;
+                text-align: left;
+                /* text-shadow: 3px 3px 3px palevioletred; */
+                color:plum;
+                font-size: 45px;
+            }
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(116, 65, 94);
+                position: sticky;
+                overflow: hidden;
+                width: 100%;
+                top: 0;
+                opacity: 80%;
+            }
+            li {
+                float: left;
+            }
+            li:last-child{
+                border-bottom: none;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover{
+                background-color: rgb(238, 4, 4);
+            }
+            .active{
+                background-color:plum;
+            }
+            /* li a.active {
+                background-color: #4caf50;;
+                color: white;
+            }
+            li a:hover:not(.active){
+                background-color: #555;
+                color:white;
+            } */
+            #search{
+                display: block;
+                padding: 14px 16px;
+            }
+            div.gallery {
+                border: 1px solid #ccc;
+                
+              }
+            div.gallery:hover {
+                border: 1px solid #777;
+              }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+              }
+            div.desc {
+                width: 100%;
+                padding: 15px;
+                text-align: center;
+              }
+            * {
+                box-sizing: border-box;
+              }
+            .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 24.99999%;
+              }
+            @media only screen and (max-width: 700px) {
+                .responsive {
+                  width: 49.99999%;
+                  margin: 6px 0;
+                }
+              }
+            @media only screen and (max-width: 500px) {
+                .responsive {
+                  width: 100%;
+                }
+              }
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+              }
+        .footer{
+                  text-align: center; 
+                  font-size: xx-large;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  width: 100%;
+                  background-color: rosybrown;
+                  color: white;
+                  text-decoration: none;
+                  opacity: 80%;
+              }
+              /* .sidenav{
+                height: 100%;
+                width: 160px;
+                position: fixed;
+                z-index: 1;
+                top=0;
+                right: 0;
+                background-color: #111;
+                overflow: hidden;
+                padding-top: 20px;
+                opacity: ;
+              }
+              .sidenav a: :hover{
+                color: #f1f1f1;
+              }
+
+              .sidenav a{
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+              } */
+            #log{
+              display: block;
+              color: rgb(0, 0, 0);
+              border: 1px solid white;
+              padding: 10px 10px;
+              background-color: palevioletred;
+              float: right;
+              font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+            #sign{
+              display: block;
+              color: rgb(0, 0, 0);
+              border: 1px solid white;
+              padding: 10px 10px;
+              background-color: peachpuff;
+              float: right;
+              font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header class="header">
+        The Donut Shop    <i class="fas fa-cookie"></i>    <i class="fas fa-candy-cane"></i>    <i class="fas fa-stroopwafel"></i>
+        </header>
+        <div>
+          <button id="sign"><a href="Sign_Up.asp" style="text-decoration: none;">Sign Up</a></button>
+          <button id="log"><a href="Login.asp" style="text-decoration: none;">Login</a></button>
+        </div>
+            <ul>
+                <li><a class="active" href="default.asp"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="share.asp"><i class="fas fa-share-alt"></i> Share</a></li>
+                <li><a href="blog.asp"><i class="fab fa-blogger-b"></i> Blog</a></li>
+                <li><a href="order.asp"><i class="fas fa-shopping-cart"></i> Order Now</a></li>
+                <li><a href="contact.asp"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="about.asp"><i class="fas fa-info"></i> About</a></li>
+                <li style="float: right;" id="search"><form action="/search.php"><input type="text" placeholder="Search..."><button type="submit"><span style="cursor: pointer;"><i class="fa fa-search"></i></span></form></button></li>
+            </ul>
+
+            <!-- <div class="sidenav">
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#clients">Clients</a>
+              <a href="#contact">Contact</a>
+            </div>
+             -->
+
+         
+            <div class="gallery">
+                <a target="_blank" href="Bomboloni.jpg">
+                  <img src="Bomboloni.jpg" alt="Bomboloni">
+                </a>
+                <div class="desc"><b>Bomboloni-</b> These Italian Donuts better known as a Bomboloni are made with a soft yeast dough, fried, rolled in sugar then filled with your favourite pastry cream filling. Served for breakfast and snack or just about anytime you want.</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="Beignet.jpg">
+                  <img src="Beignet.jpg" alt="Beignet" >
+                </a>
+                <div class="desc"><b>Beignet-</b> To put it simply, beignets are square shaped pieces of dough that are deep fried and generously sprinkled with confectioners sugar. They're best served hot and are best paired with a cup of coffee, or café au lait!</div>
+              </div>
+             
+
+              <div class="gallery">
+                <a target="_blank" href="Greek_Donuts.jpg">
+                  <img src="Greek_Donuts.jpg" alt="Greek_Donuts">
+                </a>
+                <div class="desc"><b>Greek Donuts-</b> One of the pleasures of a Greek holiday comes in those moments after dark (and after dinner) when everyone moves to the tables in a local square to drink coffee and eat plates of tiny cinnamon-scented doughnuts.</div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="Glazed_Donuts.jpg">
+                  <img src="Glazed_Donuts.jpg" alt="Glazed_Donuts">
+                </a>
+                <div class="desc"><b>Glazed Donuts-</b> There’s just something about the fluffy and light, yet sweet richness to them that is positively addicting, in the very best way.</div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="Youtiao.jpg">
+                  <img src="Youtiao.jpg" alt="Youtiao">
+                </a>
+                <div class="desc"><b>Youtiao-</b> These Chinese crullers are really good alone when made fresh with some dipping sauce made with some soy sauce, hot chili oil and a splash of vinegar.</div>
+              </div>
+        
+              <div class="gallery">
+                <a target="_blank" href="German_Berliners.jpg">
+                  <img src="German_Berliners.jpg" alt="German_Berliners">
+                </a>
+                <div class="desc"><b>German Berliners-</b> Simply, a Berliner is a round fried treat made from enriched dough and filled with jam (or some other filling). Basically, a jelly donut. But it’s more! </div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="Sel_Roti.jpg">
+                  <img src="Sel_Roti.jpg" alt="Sel_Roti">
+                </a>
+                <div class="desc"><b>Sel Roti-</b> Sel Roti is a crispy snack from the Indian state of Sikkim, with origin in Nepal, that is popularly made during the Tihar Festival. This mildly sweet roti is served with spicy curry.</div>
+              </div>      
+          
+          <footer class="footer">
+            <div>
+            Connect With Us
+            <a href="https://www.facebook.com/" style="color: rgb(89, 89, 226);"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.google.com/" style="color: white;"><i class="fab fa-google-plus-g"></i></a>
+            <a href="https://twitter.com/?lang=en" style="color: rgb(18, 128, 231);"><i class="fab fa-twitter"></i></a>
+            </div>
+        </footer>
+    </body>
+</html>
