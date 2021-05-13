@@ -1,0 +1,149 @@
+body{
+    background-image: url("Donut.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+.header{
+    font-family: "Audiowide",sans-serif;
+    text-align: left;
+    /* text-shadow: 3px 3px 3px palevioletred; */
+    color:plum;
+    font-size: 45px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(116, 65, 94);
+    position: sticky;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    opacity: 80%;
+}
+li {
+    float: left;
+}
+li:last-child{
+    border-bottom: none;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: rgb(238, 4, 4);
+}
+.active{
+    background-color:plum;
+}
+/* li a.active {
+    background-color: #4caf50;;
+    color: white;
+}
+li a:hover:not(.active){
+    background-color: #555;
+    color:white;
+} */
+#search{
+    display: block;
+    padding: 14px 16px;
+}
+div.gallery {
+    border: 1px solid #ccc;
+    
+  }
+div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+div.desc {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+* {
+    box-sizing: border-box;
+  }
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.footer{
+      text-align: center; 
+      font-size: xx-large;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rosybrown;
+      color: white;
+      text-decoration: none;
+      opacity: 80%;
+  }
+  /* .sidenav{
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top=0;
+    right: 0;
+    background-color: #111;
+    overflow: hidden;
+    padding-top: 20px;
+    opacity: ;
+  }
+  .sidenav a: :hover{
+    color: #f1f1f1;
+  }
+
+  .sidenav a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  } */
+#log{
+  display: block;
+  color: rgb(0, 0, 0);
+  border: 1px solid white;
+  padding: 10px 10px;
+  background-color: palevioletred;
+  float: right;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#sign{
+  display: block;
+  color: rgb(0, 0, 0);
+  border: 1px solid white;
+  padding: 10px 10px;
+  background-color: peachpuff;
+  float: right;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
